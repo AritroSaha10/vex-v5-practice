@@ -67,6 +67,9 @@ void initialize(void);
 void disabled(void);
 void competition_initialize(void);
 void opcontrol(void);
+
+void myAutonomous(void);
+void myOpControl(void);
 #ifdef __cplusplus
 }
 #endif

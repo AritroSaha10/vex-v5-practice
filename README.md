@@ -17,6 +17,7 @@ One of the main goals of this project is doing everything from scratch. This has
 - Implement PID on the drive system, arm, and claw
 - Implement odometry
 - Implement autonomous mode selector?
+- Setup file structure
 
 
 ## Libraries Used
