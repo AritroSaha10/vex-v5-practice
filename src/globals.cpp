@@ -1,6 +1,9 @@
 #include "globals.h"
 #include "chassis.h"
 
+// Controller
+pros::Controller master(pros::E_CONTROLLER_MASTER);
+
 // Motor for drivetrain
 pros::Motor frontLeftDrive(FL_PORT);
 pros::Motor backLeftDrive(BR_PORT);

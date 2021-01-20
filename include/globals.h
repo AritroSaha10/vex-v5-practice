@@ -1,5 +1,8 @@
 #include "main.h"
 
+// Controller
+extern pros::Controller master;
+
 // Motors for drivetrain
 extern pros::Motor frontLeftDrive;
 extern pros::Motor backLeftDrive;
