@@ -1,4 +1,4 @@
-#include "drive.h"
+#include "systems/drive.h"
 #include "globals.h"
 
 void setDrive(int frontLeft, int backLeft, int frontRight, int backRight) {
@@ -9,7 +9,7 @@ void setDrive(int frontLeft, int backLeft, int frontRight, int backRight) {
 }
 
 // Values are of range [-127, 127]
-void processArcadeDrive(int straight, int strafe, int yaw, double threshold = 0.05) {
+void processArcadeDrive(int straight, int strafe, int yaw, double threshold) {
     // Max voltage in millivolts
     const int maxVoltage = 12000;
 
