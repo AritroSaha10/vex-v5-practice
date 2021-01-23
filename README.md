@@ -10,7 +10,8 @@ One of the main goals of this project is doing everything from scratch. This has
 ## Features
 
 ### Current
-- None
+- Driver control from scratch of arm, claw, and movement
+- Organized file structure
 
 ### Planned
 - Implement drive control from scratch
