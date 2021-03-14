@@ -1,4 +1,4 @@
-# Clawbot Practice
+# VEX V5 Practice
 A personal project of mine where I'll be practicing the programming of a VEX robot. Specifically, an X-Drive version of the V5 clawbot. 
 
 ## Goals
