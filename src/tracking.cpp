@@ -126,8 +126,8 @@ const double lrOffset = WHEELBASE / 2.0f; // Offset of the left / right tracking
 const double bOffset = -BACK_WHEEL_OFFSET; // Offset of the back tracking wheel from the center in terms of y axis (negative because its in the back)
 
 // Conversion calculations
-#define DRIVE_DEGREE_TO_INCH (M_PI * DRIVE_WHEEL_DIAMETER / 360) 
-#define TRACKING_WHEEL_DEGREE_TO_INCH (M_PI * TRACKING_WHEEL_DIAMETER / 360)
+#define DRIVE_DEGREE_TO_INCH (PI * DRIVE_WHEEL_DIAMETER / 360) 
+#define TRACKING_WHEEL_DEGREE_TO_INCH (PI * TRACKING_WHEEL_DIAMETER / 360)
 
 void tracking(void* param) {
     // Initialize variables
@@ -217,7 +217,7 @@ void tracking(void* param) {
         printf("X: %f, Y: %f, A: %f", 
                 trackingData.getPos().getX(), 
                 trackingData.getPos().getY(), 
-                trackingData.getHeading() * 180 / M_PI);
+                trackingData.getHeading() * 180 / PI);
         
         pros::delay(5);
     }   
