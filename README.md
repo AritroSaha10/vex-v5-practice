@@ -11,18 +11,17 @@ One of the main goals of this project is doing everything from scratch. This has
 
 ### Current
 - Driver control from scratch of arm, claw, and movement
+- Odometry that tracks position of robot relative to field
 - Organized file structure
 
 ### Planned
-- Implement drive control from scratch
 - Implement PID on the drive system, arm, and claw
-- Implement odometry
-- Implement autonomous mode selector?
+- Implement autonomous mode selector using LVGL
+- Setup system manager classes for arm and claw
 - Setup file structure
 
 
 ## Libraries Used
-- OkapiLib
 - PROS
 
 ## Author

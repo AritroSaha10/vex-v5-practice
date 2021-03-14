@@ -18,5 +18,8 @@ pros::Motor claw(CLAW_PORT);
 
 // External encoders for tracking distance
 pros::ADIEncoder leftEncoder(LEFT_ENCODER_1, LEFT_ENCODER_2);
-pros::ADIEncoder middleEncoder(MIDDLE_ENCODER_1, MIDDLE_ENCODER_2);
 pros::ADIEncoder rightEncoder(RIGHT_ENCODER_1, RIGHT_ENCODER_2);
+pros::ADIEncoder backEncoder(BACK_ENCODER_1, BACK_ENCODER_2);
+
+// Tracking data from odom
+TrackingData trackingData;

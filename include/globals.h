@@ -1,4 +1,6 @@
+#pragma once
 #include "main.h"
+#include "tracking.h"
 
 // Controller
 extern pros::Controller master;
@@ -18,4 +20,7 @@ extern pros::Motor claw;
 // External encoders for tracking distance
 extern pros::ADIEncoder leftEncoder;
 extern pros::ADIEncoder rightEncoder;
-extern pros::ADIEncoder middleEncoder;
+extern pros::ADIEncoder backEncoder;
+
+// Tracking data from odom
+extern TrackingData trackingData;
