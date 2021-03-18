@@ -13,6 +13,7 @@ One of the main goals of this project is doing everything from scratch. This has
 - Driver control from scratch of arm, claw, and movement
 - Odometry that tracks position of robot relative to field
 - Organized file structure
+- Implement PID calculations
 
 ### Planned
 - Implement PID on the drive system, arm, and claw
