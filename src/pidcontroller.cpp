@@ -71,3 +71,21 @@ double PIDController::step(double sensorVal) {
 
     return this->speed;
 }
+
+void PIDController::reset() {
+    this->current = 0;
+    this->error = 0;
+    this->lastError = 0;
+    this->integral = 0;
+    this->derivative = 0;
+    this->target = 0;
+    this->speed = 0;
+
+    this->settleStart = 0;
+    this->settling = true;
+    this->settled = true;
+}
+
+bool PIDController::isSettled() {
+    return this->settled;
+}
