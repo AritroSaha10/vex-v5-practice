@@ -1,10 +1,10 @@
 # VEX V5 Practice
-A personal project of mine where I'll be practicing the programming of a VEX robot. Specifically, an X-Drive version of the V5 clawbot. 
+A personal project of mine where I'll be practicing the programming of a VEX robot. Specifically, a V5 clawbot with holonomic drive. 
 
 ## Goals
 One of the main goals of this project is doing everything from scratch. This has two major benefits:
 
-1. Code from this project can be reused in other projects. For example, if we need a PID movement controller for X-Drive, we can just take the one from this project.
+1. Code from this project can be reused in other projects. For example, if a PID movement controller for a holonomic drive is needed, one can be taken from this project.
 2. I get to learn more on how to create this systems and algorithms from scratch which is beneficial. 
 
 ## Features
