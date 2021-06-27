@@ -1,4 +1,5 @@
 #pragma once
+#include "tracking.h"
 
 /* 
  * Stores PID constants, such as Proportional, Integral, Derivative weights 
@@ -35,3 +36,6 @@ class PIDController {
 
         bool isSettled();
 };
+
+void strafe(Vector2 dir, double turn);
+void turnToAngle(double target); // Target is in degrees

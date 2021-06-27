@@ -1,9 +1,18 @@
 #include "pidcontroller.h"
-#include "globals.h"
 #include "main.h"
+#include "globals.h"
+#include "chassis.h"
 
 // Unit is milliseconds
 #define SETTLE_DELAY 200 
+
+// Tolerance values (taken from TT season code)
+#define DRIVE_TOLERANCE 0.5
+#define TURN_TOLERANCE 3 * PI/180
+
+// PID Constants for both turning and driving 
+PIDInfo driveConstants(1, 1, 1); 
+PIDInfo turnConstants(1, 1, 1);
 
 // Initialize with defaults
 PIDInfo::PIDInfo() {
@@ -88,4 +97,18 @@ void PIDController::reset() {
 
 bool PIDController::isSettled() {
     return this->settled;
+}
+
+void strafe(Vector2 dir, double turn) {
+
+}
+
+void turnToAngle(double target) {
+    target = target * 180/PI;
+    PIDController turnController(target, TURN_TOLERANCE, turnConstants);
+
+    do {
+        double speed = turnController.step(trackingData.getHeading());
+
+    } while (!turnController.isSettled());
 }
